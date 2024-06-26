@@ -7,3 +7,7 @@ h1{
 focus {
     outline: 3px solid #007BFF; /* Blaue Umrandung beim Fokus */
   }
+
+  p{
+    font-size: large;
+  }
