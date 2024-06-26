@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+
+focus {
+    outline: 3px solid #007BFF; /* Blaue Umrandung beim Fokus */
+  }

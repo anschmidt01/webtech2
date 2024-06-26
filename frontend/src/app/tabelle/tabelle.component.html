@@ -1,0 +1,94 @@
+<div class="container mt-3">
+  <fieldset class="container  mt-5">
+    <h3>Alle deine Bücher:</h3>
+    <div class="table-responsive">
+        <div *ngIf="selectedId == 0" class="container">
+            <table class="m-3 table table-striped table-hover">
+                <caption>Alle <code>buecher</code></caption>
+                <thead>
+                    <tr>
+                        <th scope="col ">Nr</th>
+                        <th scope="col ">Titel</th>
+                        <th scope="col ">Kurzbeschreibung</th>
+                        <th scope="col ">Genre</th>
+                        <th scope="col ">Status</th>
+                        <th scope="col ">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let buch of buecher; let i=index;  trackBy: trackByBuch">
+                        <td>{{ i+1 }}</td>
+                        <td>{{buch.titel}}</td>
+                        <td>{{buch.kurzbeschreibung}}</td>
+                        <td>{{buch.genre}}</td>
+                        <td>{{buch.status}}</td>
+                        
+                        <td><i-bs
+                            name="trash"
+                            class="text-secondary"
+                            width="1em"
+                            height="1em"
+                            (click)="open(content, buch.id)">
+                          </i-bs></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div *ngIf="selectedId > 0" class="container">
+          <br>
+            <h3>Buch mit der Id: {{ selectedId }} aktualisieren</h3>
+            <div *ngIf="error">
+                <p>{{ error?.message }}</p>
+                <p>{{ error?.status }}</p>
+                <p><a [routerLink]="['/tabelle']">Zurück zur Tabelle</a></p>
+            </div>
+          <div *ngIf="buch">
+            <app-form [buch]="buch" (updateEvent)="update($event)"></app-form>
+          </div>
+        </div>
+
+    
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Confirm delete</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('cancel')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <h4 style="color: rgb(16, 14, 14)">Möchtest du dieses Buch löschen?</h4>
+      <form [formGroup]="form">
+                <div class="form-group">
+          <label for="inputTitel">titel</label>
+          <div class="input-group">
+            <input id="inputTitel" class="form-control" formControlName="titelControl" value="{{ buch?.titel }}" readonly>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputKurzbeschreibung">kurzbeschreibung</label>
+          <div class="input-group">
+            <input id="inputKurzbeschreibung" class="form-control" formControlName="kurzbeschreibungControl" value="{{ buch?.kurzbeschreibung }}" readonly>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputGenre">genre</label>
+          <div class="input-group">
+            <input id="inputGenre" class="form-control" formControlName="genreControl" value="{{ buch?.genre }}" readonly>
+          </div>
+        </div>
+          <div class="form-group">
+            <label for="inputStatus">status</label>
+            <div class="input-group">
+              <input id="inputStatus" class="form-control" formControlName="statusControl" value="{{ buch?.status }}" readonly>
+            </div>
+          </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="modal.close('cancel')">Cancel</button>
+      <button type="button" class="btn btn-primary" (click)="modal.close('delete')">Delete</button>
+    </div>
+  </ng-template>
+    </div>
+  </fieldset>
+</div>

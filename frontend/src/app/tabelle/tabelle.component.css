@@ -1,0 +1,8 @@
+@import url('../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+body{
+    background-color:  rgb(152, 225, 150);;
+}
+focus {
+    outline: 3px solid #007BFF; /* Blaue Umrandung beim Fokus */
+  }                                         

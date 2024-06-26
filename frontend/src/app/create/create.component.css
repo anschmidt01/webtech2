@@ -1,0 +1,17 @@
+button{
+    height: 50px;
+    width:200px;
+    font-size: medium;
+    
+}
+select{
+    height:40px;
+    
+}
+
+body {
+    overflow: scroll; /* Show scrollbars */
+  }
+  input[required] {
+    border-color:  rgb(152, 225, 150);
+  }

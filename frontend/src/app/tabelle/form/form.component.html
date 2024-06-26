@@ -1,0 +1,45 @@
+<form [formGroup]="form">
+    <div class="form-group row">
+      <label for="staticId" class="col-sm-2 col-form-label">id</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" formControlName="idControl" id="staticId" readonly>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inputTitel" class="col-sm-2 col-form-label">Titel</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" formControlName="titelControl" id="inputTitel">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inputKurzbeschreibung" class="col-sm-2 col-form-label">Kurzbeschreibung</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" formControlName="kurzbeschreibungControl" id="inputKurzbeschreibung">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inputGenre" class="col-sm-2 col-form-label">Genre</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" formControlName="genreControl" id="inputGenre">
+      </div>
+    </div>
+  
+      <div class="form-group row">
+        <label for="inputStatus" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" formControlName="statusControl" id="inputStatus">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <button type="submit" class="btn btn-primary btn-block" (click)="onSubmit()">Update</button>
+        </div>
+        <div class="col-sm-6">
+            <button type="cancel" class="btn btn-secondary btn-block" (click)="cancel()">Cancel</button>
+        </div>
+      </div>
+    </form>
