@@ -14,6 +14,48 @@ h1{
     font-size: large;
   }
 
+/* Stil für den Header und die Navigation */
+header {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Stil für den Hauptinhalt */
+main {
+    padding: 20px;
+}
+
+/* Stil für die Abschnitte */
+section {
+    margin-bottom: 30px;
+}
+
+/* Zusätzliche Stile für die Textcontainer */
+.text-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Stil für das Bild im Kontaktbereich */
+#contact img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
   /* Ermöglichen von größeren Abständen für bessere Lesbarkeit */
 .text-container * {
     letter-spacing: 0.12em; /* Größerer Buchstabenabstand */

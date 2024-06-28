@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beispielseite für eine Bibliothek</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <a href="#maincontent" class="skip-link">Zum Hauptinhalt springen</a>
 
-<form>
-    <label for="session-time">Wähle die Sitzungszeit:</label>
-    <select id="session-time">
-      <option value="5">5 Minuten</option>
-      <option value="10">10 Minuten</option>
-      <option value="15">15 Minuten</option>
-    </select>
-  </form>
-  
-<main class="d-flex align-items-center min-vh-100">
-    <div class="text-container">
-       <h1>Welcome to your own library!</h1> 
-       <p></p>
-       <p>
-        Willkommen bei deiner digitalen Bibliothek, mit der du deine eigenen Bücher bequem und 
-        effizient organisieren, katalogisieren und verwalten kannst.
-       </p>
-       <h2>Du entscheidest.</h2>
-       <h2>Entweder:</h2>
-       <p>Klick auf "Ein Buch hinzufügen" um dein neustes Buch, ein Buch deiner Wunschliste 
-        oder auch ein gelesenes Buch hinzuzufügen!</p>
-        <p></p>
-        <h2>Oder:</h2>
-       <p>Klick auf "Alle deine Bücher" um eine Übersicht aller deiner Bücher zu haben!</p>
-        <p></p>
-        <p></p>
-        <p>Holen Sie sich Inspirationen für Bücher auf <a href="https://www.thalia.de/kategorie/buecher-2/">Thalias aktuellen Buchempfehlungen.</a> </p>
-       <img src="/Librarybus.png" alt="Bild eines Library Busses">
-    </div>
-</main>  
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#services">Ein Buch hinzufügen</a></li>
+                <li><a href="#news">Deine Bücher</a></li>
+                <li><a href="#contact">Inspiration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="maincontent">
+        <section id="home">
+            <div class="text-container">
+                <h1>Welcome to your own library!</h1>
+                <p>
+                    Willkommen bei deiner digitalen Bibliothek, mit der du deine eigenen Bücher bequem und 
+                    effizient organisieren, katalogisieren und verwalten kannst.
+                </p>
+                <h2>Du entscheidest.</h2>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="text-container">
+                <h2>Entweder:</h2>
+                <p>Klick auf <a href="/create">"Ein Buch hinzufügen"</a> um dein neustes Buch, ein Buch deiner Wunschliste oder auch ein gelesenes Buch hinzuzufügen!</p>
+            </div>
+        </section>
+
+        <section id="news">
+            <div class="text-container">
+                <h2>Oder:</h2>
+                <p>Klick auf <a href="/tabelle">"Alle deine Bücher"</a> um eine Übersicht aller deiner Bücher zu haben!</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="text-container">
+                <p>Holen dir Inspirationen für Bücher auf <a href="https://www.thalia.de/kategorie/buecher-2/">Thalias aktuellen Buchempfehlungen.</a></p>
+                <p></p>
+                <img src="/Librarybus.png" alt="Bild eines Library Busses">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
