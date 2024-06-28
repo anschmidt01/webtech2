@@ -23,13 +23,12 @@
                         <td>{{buch.genre}}</td>
                         <td>{{buch.status}}</td>
                         
-                        <td><i-bs
-                            name="trash"
-                            class="text-secondary"
-                            width="1em"
-                            height="1em"
-                            (click)="open(content, buch.id)">
-                          </i-bs></td>
+                        <td>
+                          <button (click)="open(content, buch.id)" class="delete-button">
+                              <span class="visually-hidden">Löschen</span>
+                              <i-bs name="trash" class="text-secondary" width="1em" height="1em"></i-bs>
+                          </button>
+                      </td>
                     </tr>
                 </tbody>
             </table>
