@@ -15,3 +15,8 @@ body {
   input[required] {
     border-color:  rgb(152, 225, 150);
   }
+
+  :focus {
+    outline: 3px solid #007BFF; /* Blaue Kontur für fokussierte Elemente */
+    outline-offset: 2px; /* Abstand zwischen Kontur und Element */
+}   

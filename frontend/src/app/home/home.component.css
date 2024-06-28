@@ -4,9 +4,11 @@ main {
 h1{
     font-weight: 900;
 }
-focus {
-    outline: 3px solid #007BFF; /* Blaue Umrandung beim Fokus */
-  }
+
+:focus {
+    outline: 3px solid #007BFF; /* Blaue Kontur für fokussierte Elemente */
+    outline-offset: 2px; /* Abstand zwischen Kontur und Element */
+}
 
   p{
     font-size: large;
