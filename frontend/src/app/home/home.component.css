@@ -11,3 +11,11 @@ focus {
   p{
     font-size: large;
   }
+
+  /* Ermöglichen von größeren Abständen für bessere Lesbarkeit */
+.text-container * {
+    letter-spacing: 0.12em; /* Größerer Buchstabenabstand */
+    line-height: 2; /* Größerer Zeilenabstand */
+    word-spacing: 0.16em; /* Größerer Wortabstand */
+    margin-bottom: 1em; /* Abstand zwischen Absätzen */
+}
