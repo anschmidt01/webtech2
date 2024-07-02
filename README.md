@@ -11,7 +11,6 @@
 ***
 Diese Idee kam ursprünglich meiner Mutter, weil wir zu viele Bücher zuhause haben, und keine Übersicht darüber, ob sie gelesen wurden oder nicht. 
 Man kann Bücher hinzufügen, sie anzeigen lassen und löschen.
-(Updaten hat nicht funktioniert.)
 
 
 ### Information zur Anwendung
@@ -35,8 +34,7 @@ In der Tabelle kann man alle eingetragenen Bücher in der Datenbank sehen.
 
 ![Tabelle](tabelle1.png)
 
-### Bearbeiten
-Leider passiert bei mir nichts, wenn man auf den Stift klickt. 
+ 
 
 ### Löschen
 Durch das Bootstrap Trash Icon kann ein Eintrag gelöscht werden. Dieses Fenster zur Bestätigung des Löschvorgangs öffnet sich dann. 
@@ -62,7 +60,7 @@ Eine Übersicht der verwendeten Technologien:
 Leider hat das Deployment zeitlich nicht funktioniert. 
 
 1. Das Repository muss geklont werden.
---> git clone https://github.com/anschmidt01/WebtechProjekt23.git
+--> git clone https://github.com/anschmidt01/webtech2.git
 
 2. Die buecher.sql muss lokal in die Datenbank eingefügt werden.
 
