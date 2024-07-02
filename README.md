@@ -19,27 +19,27 @@ Man kann Bücher hinzufügen, sie anzeigen lassen und löschen.
 
 Begrüßungsseite, wenn man die Anwendung öffnet.
 
-![Begrüßung](Willkommensseite.png)
+![Begrüßung](Welcome.png)
 
 #### Ein Buch hinzufügen
 
 Der Nutzer ist möglich ein Buch seiner Wahl inklusive Titel, Kurzbeschreibung, Genre und Status hinzuzufügen. 
 Die id wird automatisch zugewiesen.
 
-![Hinzufügen](hinzufügen.png)
+![Hinzufügen](Buchhinzufügen.png)
 
 #### Tabelle
 ***
 In der Tabelle kann man alle eingetragenen Bücher in der Datenbank sehen. 
 
-![Tabelle](tabelle1.png)
+![Tabelle](Übersicht.png)
 
  
 
 ### Löschen
 Durch das Bootstrap Trash Icon kann ein Eintrag gelöscht werden. Dieses Fenster zur Bestätigung des Löschvorgangs öffnet sich dann. 
 
-![Löschen](tabelle2loeschen.png)
+![Löschen](löschen.png)
 
 
 ### Technologien
