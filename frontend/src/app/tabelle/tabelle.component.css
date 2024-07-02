@@ -1,8 +1,6 @@
 @import url('../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 
-body{
-    background-color:  rgb(152, 225, 150);;
-}
+    
 :focus {
     outline: 3px solid #007BFF; /* Blaue Kontur für fokussierte Elemente */
     outline-offset: 2px; /* Abstand zwischen Kontur und Element */
