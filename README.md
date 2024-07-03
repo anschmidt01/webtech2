@@ -3,7 +3,9 @@
 ## Dokumentation
 ***
 Die genaue Dokumentation mit Erklärungen der Erfolgskriterien kann hier angeschaut werden.
-![Doku](WEBTECH 2 Dokumenation.pdf)
+
+```html
+<iframe src="dokumentation.pdf" width="100%" height="600px"></iframe>
 
 ### Inhaltsverzeichnis
 1. [Allgemeine Informationen](#allgemeine-information)
