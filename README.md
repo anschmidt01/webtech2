@@ -4,8 +4,8 @@
 ***
 Die genaue Dokumentation mit Erklärungen der Erfolgskriterien kann hier angeschaut werden.
 
-```html
-<iframe src="dokumentation.pdf" width="100%" height="600px"></iframe>
+![Dokumentation](Dokumentation.pdf)
+
 
 ### Inhaltsverzeichnis
 1. [Allgemeine Informationen](#allgemeine-information)
