@@ -1,34 +1,39 @@
 # Deine eigene Bibliothek
 
-## Inhaltsverzeichnis
+## Dokumentation
+***
+Die genaue Dokumentation mit Erklärungen der Erfolgskriterien kann hier angeschaut werden.
+![Doku](WEBTECH 2 Dokumenation.pdf)
+
+### Inhaltsverzeichnis
 1. [Allgemeine Informationen](#allgemeine-information)
 2. [Information zur Anwendung](#information-zur-anwendung)
 3. [Technologien](#technologien)
 4. [Installation](#installation)
 
 
-### Allgemeine Information
+#### Allgemeine Information
 ***
 Diese Idee kam ursprünglich meiner Mutter, weil wir zu viele Bücher zuhause haben, und keine Übersicht darüber, ob sie gelesen wurden oder nicht. 
 Man kann Bücher hinzufügen, sie anzeigen lassen und löschen.
 
 
-### Information zur Anwendung
+#### Information zur Anwendung
 ***
-#### Home:
+##### Home:
 
 Begrüßungsseite, wenn man die Anwendung öffnet.
 
 ![Begrüßung](Welcome.png)
 
-#### Ein Buch hinzufügen
+##### Ein Buch hinzufügen
 
 Der Nutzer ist möglich ein Buch seiner Wahl inklusive Titel, Kurzbeschreibung, Genre und Status hinzuzufügen. 
 Die id wird automatisch zugewiesen.
 
 ![Hinzufügen](Buchhinzufügen.png)
 
-#### Tabelle
+##### Tabelle
 ***
 In der Tabelle kann man alle eingetragenen Bücher in der Datenbank sehen. 
 
@@ -36,26 +41,26 @@ In der Tabelle kann man alle eingetragenen Bücher in der Datenbank sehen.
 
  
 
-### Löschen
+#### Löschen
 Durch das Bootstrap Trash Icon kann ein Eintrag gelöscht werden. Dieses Fenster zur Bestätigung des Löschvorgangs öffnet sich dann. 
 
 ![Löschen](löschen.png)
 
 
-### Technologien
+#### Technologien
 *** 
 Eine Übersicht der verwendeten Technologien:
-### Entwicklungsumgebung:
+#### Entwicklungsumgebung:
 - Visual Studio Code
 - Bootstrap
-### Datenbank: 
+#### Datenbank: 
 - MySQL
-### Backend:
+#### Backend:
 - Node.js
-### Frontend:
+#### Frontend:
 - Angular
 
-### Installation
+#### Installation
 ***
 Leider hat das Deployment zeitlich nicht funktioniert. 
 
